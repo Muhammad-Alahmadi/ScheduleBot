@@ -46,6 +46,7 @@ class Event:
 
         return (self.start_date <= other.start_date <= self.end_date) or (other.start_date <= self.start_date <= other.end_date)
         # This is to ...
+        # A
         '''return (
             (
                 (self.start_date >= other.start_date and self.start_date < other.end_date)
