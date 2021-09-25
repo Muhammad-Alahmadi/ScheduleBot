@@ -43,9 +43,9 @@ class Event:
     # Case 3: Only the start date for the event occurs inside another event
     # Case 4: Only the end date for the event occurs inside another event
     def intersect(self, other):
-        
-        return (self.start_date <= other.start_date <= self.end_date) or (other.start_date <= self.start_date <= other.end_date)
 
+        return (self.start_date <= other.start_date <= self.end_date) or (other.start_date <= self.start_date <= other.end_date)
+        # This is to ...
         '''return (
             (
                 (self.start_date >= other.start_date and self.start_date < other.end_date)
